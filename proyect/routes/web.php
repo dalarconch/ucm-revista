@@ -25,5 +25,10 @@ Route::get('/dsa', function () {
     return view('layouts/travis');
 });
 
+Route::get('/aaa', function () {
+    return view('layouts/landing');
+});
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');

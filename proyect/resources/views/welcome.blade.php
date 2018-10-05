@@ -87,7 +87,7 @@
                 <div class="links">
                     <a href="{{ url('/asd') }}">Canvas</a>
                     <a href="{{ url('/dsa') }}">Travis</a>
-                    <a href="https://laravel-news.com">News</a>
+                    <a href="{{ url('/aaa') }}">Landing</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
