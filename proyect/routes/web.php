@@ -26,8 +26,20 @@ Route::get('/dsa', function () {
 });
 
 Route::get('/aaa', function () {
-    return view('layouts/landing');
+    $home=\App\Home::all();
+    return view('layouts/landing',compact('home'));
 });
+
+
+Route::resource('homes','Home2Controller');
+
+Route::get('/edini','Home2Controller@index');
+
+Route::get('/inicio', 'Home2Controller@inicio');
+
+Route::get('/hola', 'Home2Controller@edit');
+
+
 
 
 

@@ -55,6 +55,9 @@
 	<!--  Fonts and icons  -->
 	<link href="{{ asset('material/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+
+	<!--  EDITOR WEB  -->
+	<script src="{{ asset('@ckeditor/ckeditor/ckeditor.js') }}"></script>
 </head>
 
 <body>
@@ -180,7 +183,7 @@
 		                            <a href="components/notifications.html">Notifications</a>
 		                        </li>
 		                        <li>
-		                            <a href="components/icons.html">Icons</a>
+		                            <a href="{{'/hola'}}""> Edita Home</a>
 		                        </li>
 		                        <li>
 		                            <a href="components/typography.html">Typography</a>

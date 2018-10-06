@@ -83,7 +83,7 @@
 
                                 @if (Route::has('login'))
                                         @auth
-                                        <li><a href="{{ url('/home') }}">Admin</a></li>
+										<li class="btn-cta"><a href="{{ url('/home') }}">MODO ADMIN</a></li>
                                         @else
                                             <li class="btn-cta"><a href="{{ route('login') }}">Login</a></li>
                                             @if (Route::has('register'))
@@ -108,8 +108,8 @@
 
                         
 						<div class="intro">
-							<h1>Landing Created By The Fine Folks</h1>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line</p>
+							{!!$home[0]->cuerpo!!}
+
 							<p><a href="#" class="btn btn-primary btn-outline btn-md">Live Preview</a> <a href="#" class="btn btn-primary btn-outline btn-md">Lean more</a></p>
 						</div>
 
